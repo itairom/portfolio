@@ -1,0 +1,124 @@
+//HELPERS
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+
+  > *.full {
+    flex: 1;
+  }
+
+  &.column {
+    flex-direction: column;
+  }
+
+  &.end {
+    justify-content: flex-end;
+  }
+
+  &.justify-center {
+    justify-content: center;
+  }
+
+  &.align-center {
+    align-items: center;
+  }
+
+  &.space-between {
+    justify-content: space-between;
+  }
+
+  &.space-evenly {
+    justify-content: space-evenly;
+  }
+}
+
+.fill-dark {
+  fill: #959699;
+}
+
+.dark {
+  background-color: #18191b;
+  color: #959699;
+  &-text {
+    color: #ffffff;
+    font-weight: bold;
+  }
+  .bold {
+    color: rgb(255, 255, 255);
+  }
+}
+.red {
+  fill: red;
+  color: red;
+}
+
+.weather-by-hour {
+  max-width: 88vw;
+  @include for-normal-layout {
+    max-width: 93vw;
+  }
+  height: 20vh;
+}
+
+.underline {
+  border-bottom: #fff 2px solid;
+}
+.select {
+  user-select: none;
+  background: none;
+  background-color: none;
+  color: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.light {
+  background-color: #fff;
+  color: #4c5055;
+}
+
+$clr1: #4c5055;
+$clr2: #fff;
+
+// Font Sizes
+.fs12 {
+  font-size: rem(12px);
+}
+
+.fs14 {
+  font-size: rem(14px);
+}
+
+.fs18 {
+  font-size: rem(18px);
+}
+
+.fs20 {
+  font-size: rem(20px);
+}
+
+.fs24 {
+  font-size: rem(24px);
+}
+
+.fs28 {
+  font-size: rem(28px);
+}
+
+.fs30 {
+  font-size: rem(30px);
+}
+
+
+.light {
+  color: black;
+  background-color: white;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+} 

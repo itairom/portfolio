@@ -1,0 +1,10 @@
+.home-container {
+    background-color: blueviolet;
+
+    @include for-narrow-layout {
+        background-color: red;
+    }
+    @include for-normal-layout {
+        background-color: antiquewhite;
+    }
+}

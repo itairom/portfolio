@@ -1,0 +1,41 @@
+.projects-container {
+    height: 100vh;
+    background-color: rgb(121, 170, 216);
+
+    .transition {
+        path {
+            fill: $clr1;
+        }
+    }
+
+    .angular {
+        width: 200px;
+        height: 200px;
+        path {
+            // stroke: red;
+            // stroke-width: 1;
+            // stroke-dasharray: 390;
+            // stroke-dashoffset: 390;
+        }
+        :hover {
+            // animation: svg-animation 3s linear forwards;
+        }
+    }
+    @keyframes svg-animation {
+        0% {
+            stroke-dashoffset: 390;
+        }
+        33% {
+            stroke-dashoffset: 300;
+        }
+        66% {
+            stroke-dashoffset: 200;
+        }
+        100% {
+            stroke-dashoffset: 390;
+
+        }
+    }
+}
+
+// font-size: calc(10px + 15 * ((100vw - 420px) / 1180));

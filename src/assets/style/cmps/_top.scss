@@ -1,0 +1,57 @@
+.top-container {
+    height: 80vh;
+    background-color: $clr1;
+    z-index: 2;
+    .title {
+        align-items: flex-start;
+        h1 {
+            font-size: 4rem;
+
+            &:hover {
+                // color: red;
+                // transition: all .3s ease-out;
+                // animation: rubberBand 1s;
+            }
+        }
+    }
+
+    @keyframes rubberBand {
+        from {
+            transform: scale3d(1, 1, 1);
+        }
+
+        30% {
+            transform: scale3d(1.25, 0.75, 1);
+        }
+
+        40% {
+            transform: scale3d(0.75, 1.25, 1);
+        }
+
+        50% {
+            transform: scale3d(1.15, 0.85, 1);
+        }
+
+        65% {
+            transform: scale3d(0.95, 1.05, 1);
+        }
+
+        75% {
+            transform: scale3d(1.05, 0.95, 1);
+        }
+
+        to {
+            transform: scale3d(1, 1, 1);
+        }
+    }
+}
+.top-circle {
+    background-color: rgb(110, 84, 84);
+    width: 1800px;
+    height: 1800px;
+    border-radius: 50%;
+    position: fixed;
+    top: -1500px;
+    left: -100px;
+    z-index: -1;
+}

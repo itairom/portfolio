@@ -88,10 +88,12 @@
 
   @keyframes transition-animation {
     from{
-      margin-inline-start: -200px;
+      // margin-inline-start: -200px;
+      transform: translateY(50px);
     }
     to {
-      margin-inline-start: 0px;
+      transform: translateY(0px);
+      // margin-inline-start: 0px;
       opacity: 1;
       left: 0;
     }

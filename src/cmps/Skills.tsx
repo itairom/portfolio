@@ -1,6 +1,8 @@
-import { useEffect, useState } from "react"
+import SkillCard from "./SkillCard"
 
 export function Skills() {
+
+
 
     const skills: string[] = [
         'angular',
@@ -13,26 +15,19 @@ export function Skills() {
         'redux',
         'rxjs',
         'sass',
-        'typescript'
+        'typescript',
+        'vue'
+
     ]
-
-    useEffect(() => {
-
-    }, [])
 
 
     return (
-        <section className="skills-container">
+        <section id="skills" className="skills-container">
             <h1>Skills</h1>
-
             <div className="skills-cards">
-
-                {skills.map(skill => {
+                {skills.map((skill) => {
                     return (
-                        <div className="skill-card">
-                            <p>{skill}</p>
-                            <img src={`/imgs/tech/${skill}.svg`} alt={skill} />
-                        </div>
+                        <SkillCard skill={skill} />
                     )
                 })}
             </div>

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 
 export function Header() {
 
@@ -10,14 +10,14 @@ export function Header() {
 
     return (
         <nav className="main-nav">
-            <div className="right-nav">
-                <a>LOGO</a>
-            </div>
             <div className="left-nav">
-                <a>Projects</a>
-                <a>Skills</a>
-                <a>Arcticles</a>
-                <a>About</a>
+                <h1>IR</h1>
+            </div>
+            <div className="right-nav">
+                <a href="#about">About</a>
+                <a href="#projects" >Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact" >Contact</a>
             </div>
         </nav>
     )

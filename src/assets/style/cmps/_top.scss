@@ -1,20 +1,26 @@
 .top-container {
-    height: 80vh;
-    background-color: $clr1;
+    // height: 40vh;
+    height: 70vh;
     z-index: 2;
+    h3{
+        color: $primaryClr;
+    }
+    h1{
+        color: white;
+        
+    }
     .title {
         align-items: flex-start;
         h1 {
             font-size: 4rem;
-
-            &:hover {
-                // color: red;
-                // transition: all .3s ease-out;
-                // animation: rubberBand 1s;
-            }
         }
     }
-
+    
+    p{
+        width: 400px;
+        font-size: 1.2rem;
+        color: $seconderyyClr;
+    }
     @keyframes rubberBand {
         from {
             transform: scale3d(1, 1, 1);

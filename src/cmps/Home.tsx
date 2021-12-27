@@ -1,25 +1,24 @@
-import { useEffect, useState } from "react"
-import { Conditional } from "./Conditional"
+import { Suspense } from "react"
+import {Contact} from "./Contact"
 import { Header } from "./Header"
 import { Projects } from "./Projects"
 import { Skills } from "./Skills"
 import { Top } from "./Top"
 
-export function Home() {
 
-    useEffect(() => {
-
-    }, [])
+export const Home: React.FC = () => {
 
 
 
     return (
         <div className="main-container home-container">
-            {/* <Header />
-            <Top />
-            <Projects />
-            <Skills /> */}
-            < Conditional />
+            <Suspense fallback={<span className="loader"></span>} >
+                <Header />
+                <Top />
+                <Projects />
+                <Skills />
+                <Contact />
+            </Suspense >
         </div>
     )
 }

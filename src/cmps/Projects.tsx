@@ -1,21 +1,15 @@
-import { useEffect, useState } from "react"
-// import Transition from '../assets/svg/transition.svg';
-import { ReactComponent as Transition } from './../assets/svg/transition.svg';
+import { projects, Project } from "../services/projectService";
+import { ProjectCard } from "./ProjectCard";
 
-export function Projects() {
 
-    useEffect(() => {
-
-    }, [])
-
+export const Projects: React.FC = () => {
 
 
     return (
-        <section className="projects-container">
-            {/* <img src={Transition} /> */}
-            <Transition className="transition" />
-
-
+        <section id="projects" className="projects-container">
+                {projects.map((project: Project) => {
+                    return (<ProjectCard key={project.title+'_key'}  project={project} />)
+                })}
         </section>
     )
 }

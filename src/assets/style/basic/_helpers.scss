@@ -70,6 +70,12 @@
 .underline {
   border-bottom: #fff 2px solid;
 }
+
+.shadow {
+  // box-shadow: 0px 1px 1px 0px;
+  opacity: 0 !important;
+  // padding-bottom: 10px !important;
+}
 .select {
   user-select: none;
   background: none;
@@ -87,13 +93,13 @@
   animation: transition-animation ease-in 1s forwards;
 
   @keyframes transition-animation {
-    from{
-      // margin-inline-start: -200px;
+    from {
+      margin-inline-start: -20px;
       transform: translateY(50px);
     }
     to {
       transform: translateY(0px);
-      // margin-inline-start: 0px;
+      margin-inline-start: 0px;
       opacity: 1;
       left: 0;
     }

@@ -7,21 +7,23 @@ export function Top() {
     }, [])
 
 
-
     return (
-        <section className="top-container ">
+        <section id="about" className="top-container ">
             {/* <div className="top-circle"></div> */}
             <div className="title flex column">
                 <h3>Hi, my name is </h3>
                 <h1>Itai Rom</h1>
-                {/* <h1>Hi</h1> */}
-                {/* <h1>i'm Itai</h1> */}
-                {/* <h1>Web Developer</h1> */}
-                <p>I`m driven Frontend / Full-stack developer with hands on experience with
-                    React, Vue, Angular, NodeJS, TypeScript, Redux, ES6, MongoDB, CSS and many more.
-                </p>
+                <ul>
+                    <li>Driven Frontend / Full-stack developer</li>
+                    <li>Graduate of full stack bootcamp at <a target="_blank" href="./Bootcamp CertificIte.pdf">Coding Academy</a></li>
+                    <li>Come with a hands-on approach</li>
+                    <li>Coding on daily basis</li>
+                    <li>Team-oriented personality</li>
+                </ul>
             </div>
-            <img src="./imgs/profile.jpg" alt="profile pic" />
+            <div className="img-wrapper">
+                <img src="./imgs/profile.jpg" alt="profile pic" />
+            </div>
 
         </section>
     )

@@ -6,10 +6,10 @@
 
 .main-container {
   display: grid;
-  grid-template-columns: 120px 1fr 120px;
   // grid-template-columns: 50px 1fr 50px;
   min-height: 100vh;
   height: 100%;
+  grid-template-columns: 120px 1fr 120px;
   
   > * {
     grid-column: 2;
@@ -23,21 +23,25 @@
   }
   
   @include for-narrow-layout {
-    grid-template-columns: 50px 1fr 50px;
     // grid-template-columns:
     //   minmax(rem(16px), 1fr)
     //   minmax(auto, $mobile-breakpoint)
     //   minmax(rem(16px), 1fr);
-
+    
+    grid-template-columns: 50px 1fr 50px;
   }
   @include for-normal-layout {
-    grid-template-columns:
-      minmax(rem(16px), 1fr)
-      // minmax(auto, $normal-breakpoint)
-      minmax(auto, $narrow-breakpoint)
-      minmax(rem(16px), 1fr);
+    grid-template-columns: 50px 1fr 50px;
+
+    // grid-template-columns: 120px 1fr 120px;
+    //   grid-template-columns:
+    //     minmax(rem(16px), 1fr)
+    //     // minmax(auto, $normal-breakpoint)
+    //     minmax(auto, $narrow-breakpoint)
+    //     minmax(rem(16px), 1fr);
   }
   @include for-wide-layout {
+    // grid-template-columns: 120px 1fr 120px;
     grid-template-columns:
       minmax(rem(16px), 1fr)
       minmax(auto, $normal-breakpoint)

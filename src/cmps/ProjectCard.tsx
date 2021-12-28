@@ -8,27 +8,17 @@ interface Props {
     project: Project
 }
 
-// interface TabState {
-//     front: boolean,
-//     back: boolean
-// }
 
 export const ProjectCard: React.FC<Props> = ({ project }) => {
 
-    // const [isShown, setIsshown] = useState<TabState>({
-    //     front: true,
-    //     back: false
-    // })
 
     const ref = useRef<HTMLDivElement | null>(null)
     const entry = useIntersectionObserver(ref, {})
     const isVisible = entry?.isIntersecting
 
     useEffect(() => {
-        if (isVisible) {
-            console.log(entry);
-            ref.current?.classList.add('opacity')
-        }
+        if (isVisible) ref.current?.classList.add('opacity')
+
     }, [isVisible])
 
 

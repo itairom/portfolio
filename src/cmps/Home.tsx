@@ -1,4 +1,5 @@
 import { Suspense } from "react"
+import ScrollToTop from "react-scroll-to-top"
 import {Contact} from "./Contact"
 import { Header } from "./Header"
 import { Projects } from "./Projects"
@@ -18,6 +19,8 @@ export const Home: React.FC = () => {
                 <Projects />
                 <Skills />
                 <Contact />
+                <ScrollToTop style={{zIndex:20}} smooth color="#51c7b3" />
+
             </Suspense >
         </div>
     )

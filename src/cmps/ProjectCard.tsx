@@ -38,7 +38,10 @@ export const ProjectCard: React.FC<Props> = ({ project }) => {
             <div className="card-container">
 
                 <h3>Featured Project</h3>
-                <p className="card-title">{project.title}</p>
+
+                <a target="_blank" href={project.links.url}>
+                    <p className="card-title">{project.title}</p>
+                </a>
                 <div className="project-description">
                     <p>{project.description}</p>
                 </div>
@@ -48,16 +51,15 @@ export const ProjectCard: React.FC<Props> = ({ project }) => {
                     })}
                 </ul>
                 <div className="project-links">
-                    <a href={project.links.github}>
+                    <a target="_blank" href={project.links.github}>
                         < Github />
                     </a>
-                    <a href={project.links.url}>
+                    <a target="_blank" href={project.links.url}>
                         < Url />
                     </a>
                 </div>
-                <img src={`imgs/projects/${project.title}_desktop.png`} alt="project image" />
-                {/* <img className="mobile-img" src={`imgs/projects/${project.title}_mobile.png`} alt="project image" /> */}
-                {/* <video src="./videos/sprinttify_demo.mp4" loop autoPlay playsInline muted  ></video> */}
+                {/* <img src={`imgs/projects/${project.title}_desktop.png`} alt="project image" /> */}
+                <video src={`./videos/${project.title}_demo.mp4`} loop autoPlay playsInline muted  ></video>
             </div>
         </section>
     )

@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "Itai Portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,6 +17,7 @@
     "react-router": "^6.0.2",
     "react-router-dom": "^6.0.2",
     "react-scripts": "4.0.3",
+    "react-scroll-to-top": "^1.0.8",
     "typescript": "^4.3.5",
     "web-vitals": "^1.1.2"
   },

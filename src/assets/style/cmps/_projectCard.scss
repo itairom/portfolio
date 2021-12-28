@@ -7,15 +7,22 @@
     width: 340px;
     &:nth-child(2n) {
         direction: rtl;
-        img {
+        video {
             @include for-normal-layout {
                 float: right;
                 position: absolute;
-                // right: 220px;
                 right: 320px;
                 top: 50px;
             }
         }
+        // img {
+        //     @include for-normal-layout {
+        //         float: right;
+        //         position: absolute;
+        //         right: 320px;
+        //         top: 50px;
+        //     }
+        // }
     }
 
     @include for-narrow-layout {
@@ -114,7 +121,22 @@
     }
 
     video {
-        height: 240px;
-        width: 390px;
+
+        z-index: -1;
+        object-fit: cover;
+        height: 200px;
+        width: 340px;
+
+        @include for-narrow-layout {
+            height: 240px;
+            width: 390px;
+        }
+
+        @include for-normal-layout {
+            position: absolute;
+            left: 320px;
+            top: 50px;
+        }
+
     }
 }

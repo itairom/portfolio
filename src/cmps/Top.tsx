@@ -21,6 +21,7 @@ export function Top() {
                     React, Vue, Angular, NodeJS, TypeScript, Redux, ES6, MongoDB, CSS and many more.
                 </p>
             </div>
+            <img src="./imgs/profile.jpg" alt="profile pic" />
 
         </section>
     )

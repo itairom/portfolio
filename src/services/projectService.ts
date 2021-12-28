@@ -65,7 +65,7 @@ export const projects: Project[] = [
         techs: ['React Hooks', 'Typescript', 'Scss'],
         links: {
             github: 'https://github.com/itairom/portfolio',
-            url: ''
+            url: 'https://itairom.netlify.app/'
         },
         date: '7.7.21'
 

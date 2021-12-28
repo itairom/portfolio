@@ -3,14 +3,15 @@
     z-index: 2;
     display: flex;
     background-color: #3b404f00;
-    height: 10vh;
-    padding: 10px 0px;
+    height: 100%;
+    padding: 30px 0px;
     justify-content: space-between;
     align-items: center;
-
+    padding-bottom: 50px;
+    
     img {
-        height: 40px;
-        width: 40px;
+        height: 50px;
+        width: 50px;
     }
     @include for-mobile-layout {
         // padding: 10px 10px;
@@ -20,6 +21,8 @@
     display: flex;
     
     a {
+    font-family: Roboto;
+
         // font-family: SFMono;
         color: $primaryClr;
         font-size: 1.2rem;
@@ -29,23 +32,17 @@
             margin-right: 0px;
         }
     }
-
+    
     // @include for-mobile-layout {
-    //     display: none;
-    // }
-}
-
-.left-nav {
-    h1 {
-        display: none;
-        width: 50px;
-        height: 50px;
-        color: white;
-        line-height: 1;
-        font-size: 3rem;
-        // border: 1px solid white;
-        padding: 10px 0;
-        // border-radius: 50%;
+        //     display: none;
+        // }
+    }
+    
+    .left-nav {
+    svg{
+        display: block;
+        width:60px;
+        height:60px;
     }
     display: flex;
     .toggle-btn {

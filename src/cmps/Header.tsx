@@ -1,4 +1,5 @@
 import { useEffect } from "react"
+import { ReactComponent as Logo } from './../assets/svg/itai-logo.svg';
 
 export function Header() {
 
@@ -11,7 +12,8 @@ export function Header() {
     return (
         <nav className="main-nav">
             <div className="left-nav">
-                <h1>IR</h1>
+                {/* <h1>IR</h1> */}
+                <Logo />
             </div>
             <div className="right-nav">
                 <a href="#about">About</a>

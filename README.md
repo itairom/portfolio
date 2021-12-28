@@ -1,6 +1,6 @@
 
 <h1>Itai Rom Protfolio</h1>
-<a href="https://itairom.netlify.app/"><h4>Live Version</h4></a>
+<a href="https://itairom.netlify.app/"><h4>Live Version </h4></a>
 
 <h2>This Portfolio built with React Hooks, Typescript, Scss and Intersection Observers.</h2>
 

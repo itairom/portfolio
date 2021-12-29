@@ -1,15 +1,14 @@
 .projects-container {
     height: 100%;
     width: 100%;
-    // display: flex;
-    // flex-direction: column;
     display: grid;
-    grid-template-columns: 1fr ;
-
-    :nth-child(2n){
-
-        justify-self: flex-end;
+    grid-template-columns: 1fr;
+    :nth-child(2n) {
+        @include for-narrow-layout {
+            justify-self: center;
+        }
+        @include for-wide-layout {
+            justify-self: flex-end;
+        }
     }
-
 }
-

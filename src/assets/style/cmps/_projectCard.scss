@@ -1,9 +1,6 @@
 .project-card {
     opacity: 0;
-    // left: -500px;
-    // transform: translateX(50%);
     transition: all 500ms;
-
     width: 340px;
     &:nth-child(2n) {
         direction: rtl;
@@ -11,9 +8,11 @@
             @include for-normal-layout {
                 float: right;
                 position: absolute;
-                right: 370px;
-                // right: 320px;
+                right: 320px;
                 top: 50px;
+            }
+            @include for-wide-layout {
+                right: 390px;
             }
         }
         // img {
@@ -129,12 +128,17 @@
         @include for-narrow-layout {
             height: 260px;
             width: 410px;
+            left: 300px;
         }
-
+        
         @include for-normal-layout {
             position: absolute;
-            left: 370px;
+            left: 320px;
             top: 50px;
+        }
+        @include for-wide-layout {
+            left: 390px;
+
         }
 
     }

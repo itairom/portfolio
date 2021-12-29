@@ -76,6 +76,10 @@
   opacity: 0 !important;
   // padding-bottom: 10px !important;
 }
+
+.hidden{
+  display: none !important;
+}
 .select {
   user-select: none;
   background: none;
@@ -83,6 +87,7 @@
   color: none;
   -webkit-tap-highlight-color: transparent;
 }
+
 
 .light {
   background-color: #fff;

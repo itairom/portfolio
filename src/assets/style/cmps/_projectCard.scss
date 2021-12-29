@@ -2,8 +2,11 @@
     opacity: 0;
     transition: all 500ms;
     width: 340px;
+    justify-self: center;
     &:nth-child(2n) {
-        direction: rtl;
+        @include for-normal-layout {
+            direction: rtl;
+        }
         video {
             @include for-normal-layout {
                 float: right;
@@ -49,7 +52,7 @@
         color: $seconderyyClr;
     }
     .project-description {
-        background-color: #112240;
+        background-color: $backgroundClr;
         padding: 16px;
         box-shadow: 0 20px 30px -15px #000000;
         margin-bottom: 20px;
@@ -60,6 +63,12 @@
         list-style: none;
         padding: 0;
         margin: 0;
+        @include for-normal-layout {
+            width: 310px;
+        }
+        @include for-wide-layout {
+            width: 350px;
+        }
         li {
             margin-right: 20px;
             color: $seconderyyClr;
@@ -93,7 +102,12 @@
             width: 390px;
         }
 
-        @include for-normal-layout {
+        // @include for-normal-layout {
+        //     position: absolute;
+        //     left: 370px;
+        //     top: 50px;
+        // }
+        @include for-wide-layout {
             position: absolute;
             left: 370px;
             top: 50px;
@@ -119,7 +133,6 @@
     }
 
     video {
-
         z-index: -1;
         object-fit: cover;
         height: 200px;
@@ -130,7 +143,7 @@
             width: 410px;
             left: 300px;
         }
-        
+
         @include for-normal-layout {
             position: absolute;
             left: 320px;
@@ -138,8 +151,6 @@
         }
         @include for-wide-layout {
             left: 390px;
-
         }
-
     }
 }

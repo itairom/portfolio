@@ -19,7 +19,7 @@ export const Home: React.FC = () => {
                 <Projects />
                 <Skills />
                 <Contact />
-                <ScrollToTop style={{zIndex:20}} smooth color="#51c7b3" />
+                <ScrollToTop style={{zIndex:20}} smooth color="$primaryClr" />
 
             </Suspense >
         </div>

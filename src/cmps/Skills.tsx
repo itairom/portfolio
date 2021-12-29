@@ -1,7 +1,11 @@
 import SkillCard from "./SkillCard"
 
+export interface Skills {
+    high: string[],
+    medium: string[],
+    low: string[],
+}
 export function Skills() {
-
 
 
     const skills: string[] = [
@@ -17,8 +21,31 @@ export function Skills() {
         'sass',
         'typescript',
         'vue'
-
     ]
+
+    const skills2: Skills = {
+        high: [
+            'css3',
+            'react',
+            'redux',
+            'html5',
+            'javascript',
+            'sass',
+        ]
+        , medium: [
+            'angular',
+            'typescript',
+            'mongodb',
+            'vue'
+        ],
+        low: [
+
+            'rxjs',
+            'express',
+        ]
+
+    }
+
 
 
     return (

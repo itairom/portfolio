@@ -13,7 +13,7 @@ export interface Project {
 export const projects: Project[] = [
     {
         title: 'PetME',
-        description: 'Petme is pet adoption app for explore and find your next life companion',
+        description: 'Pet adoption platform',
         techs: ['React', 'Javascript', 'Redux', 'Node.js', 'Socket.io', 'MongoDb'],
         links: {
             github: 'https://github.com/itairom/pet_me',
@@ -21,7 +21,6 @@ export const projects: Project[] = [
 
         },
         date: '7.7.21'
-
     },
     {
         title: 'Sprinttify',
@@ -59,17 +58,17 @@ export const projects: Project[] = [
         date: '7.7.21'
 
     },
-    {
-        title: 'Portfolio',
-        description: 'Itai new portfolio!',
-        techs: ['React Hooks', 'Typescript', 'Scss'],
-        links: {
-            github: 'https://github.com/itairom/portfolio',
-            url: 'https://itairom.netlify.app/'
-        },
-        date: '7.7.21'
+    // {
+    //     title: 'Portfolio',
+    //     description: 'Itai new portfolio!',
+    //     techs: ['React Hooks', 'Typescript', 'Scss'],
+    //     links: {
+    //         github: 'https://github.com/itairom/portfolio',
+    //         url: 'https://itairom.netlify.app/'
+    //     },
+    //     date: '7.7.21'
 
-    },
+    // },
     {
         title: 'Herolo Weather',
         description: 'See the weather in your area for the next 5 days.watch the temapture by hour in convinient graph! .Add your favorite locations to Favorites',

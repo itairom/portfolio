@@ -3,12 +3,21 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
+    justify-self: center;
     :nth-child(2n) {
         @include for-narrow-layout {
             justify-self: center;
         }
         @include for-wide-layout {
             justify-self: flex-end;
+        }
+    }
+    :nth-child(2n+1) {
+        @include for-narrow-layout {
+            justify-self: center;
+        }
+        @include for-wide-layout {
+            justify-self: flex-start;
         }
     }
 }

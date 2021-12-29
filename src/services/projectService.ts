@@ -70,6 +70,17 @@ export const projects: Project[] = [
         date: '7.7.21'
 
     },
+    {
+        title: 'Herolo Weather',
+        description: 'See the weather in your area for the next 5 days.watch the temapture by hour in convinient graph! .Add your favorite locations to Favorites',
+        techs: ['React Hooks', 'redux', 'Scss', 'Chart.js', 'Axios'],
+        links: {
+            github: 'https://github.com/itairom/portfolio',
+            url: 'https://github.com/itairom/Itai-Rom-20-11-21'
+        },
+        date: '7.7.21'
+
+    },
 
 ]
 

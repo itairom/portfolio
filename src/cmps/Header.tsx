@@ -63,7 +63,6 @@ export function Header() {
                 <a href="#contact" >Contact</a>
                 <a className="resume" href="./Itai Rom CV.docx" download>Resume</a>
             </div>
-
         </nav>
     )
 }

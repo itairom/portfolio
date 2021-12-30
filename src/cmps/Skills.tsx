@@ -3,63 +3,51 @@ import SkillCard from "./SkillCard"
 export interface Skills {
     high: string[],
     medium: string[],
-    low: string[],
 }
 export function Skills() {
 
-
-    const skills: string[] = [
-        'angular',
-        'css3',
-        'express',
-        'html5',
-        'javascript',
-        'mongodb',
-        'react',
-        'redux',
-        'rxjs',
-        'sass',
-        'typescript',
-        'vue'
-    ]
-
     const skills2: Skills = {
         high: [
-            'css3',
+            'javascript',
             'react',
             'redux',
-            'html5',
-            'javascript',
+            'css3',
             'sass',
+            'html5',
+            'express',
+            'VSCode'
         ]
         , medium: [
             'angular',
             'typescript',
             'mongodb',
-            'vue'
-        ],
-        low: [
-
+            'react native',
+            'firebase',
+            'vue',
             'rxjs',
-            'express',
-        ]
-
+            'graphQl',
+        ],
     }
-
-
 
     return (
         <section id="skills" className="skills-container">
             <h1 className="section-title">- Skills</h1>
+            <h3>Technologies i use regularly</h3>
             <div className="skills-cards">
-                {skills.map((skill) => {
+                {skills2.high.map((skill) => {
                     return (
                         <SkillCard skill={skill} />
                     )
                 })}
             </div>
-
-
+            <h3>Technologies i learning on</h3>
+            <div className="skills-cards">
+                {skills2.medium.map((skill) => {
+                    return (
+                        <SkillCard skill={skill} />
+                    )
+                })}
+            </div>
         </section >
     )
 }

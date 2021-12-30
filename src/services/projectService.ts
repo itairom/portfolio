@@ -36,7 +36,7 @@ export const projects: Project[] = [
     },
     {
         title: 'Trees Survey',
-        description: 'Tool for Agronomist for Making a trees survey in the field and getting final survey.',
+        description: 'Tool for Agronomist for Making a trees survey in the field and getting final survey',
         techs: ['React Hooks', 'Redux Toolkit', 'Javascript', 'Sheet.js', 'BeutifulDnd', 'Node.js', 'MongoDb'],
         links: {
             github: 'https://github.com/itairom/trees',

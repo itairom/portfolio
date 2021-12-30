@@ -85,7 +85,7 @@
     height: 50px;
     fill: white;
     padding-right: 10px;
-    cursor: pointer;
+    cursor: pointer !important;
     @include for-narrow-layout {
         display: none;
     }

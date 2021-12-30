@@ -36,7 +36,7 @@ export const projects: Project[] = [
     },
     {
         title: 'Trees Survey',
-        description: 'Tool for Agronomist for Making a trees survey in the field and getting final survey',
+        description: 'Tool for Agronomist for Making a trees survey in the field and getting final survey.',
         techs: ['React Hooks', 'Redux Toolkit', 'Javascript', 'Sheet.js', 'BeutifulDnd', 'Node.js', 'MongoDb'],
         links: {
             github: 'https://github.com/itairom/trees',
@@ -74,8 +74,9 @@ export const projects: Project[] = [
         description: 'See the weather in your area for the next 5 days.watch the temapture by hour in convinient graph! .Add your favorite locations to Favorites',
         techs: ['React Hooks', 'redux', 'Scss', 'Chart.js', 'Axios'],
         links: {
-            github: 'https://github.com/itairom/portfolio',
+            github: 'https://github.com/itairom/Itai-Rom-20-11-21',
             url: 'https://github.com/itairom/Itai-Rom-20-11-21'
+            
         },
         date: '7.7.21'
 

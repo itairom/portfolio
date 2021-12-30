@@ -4,7 +4,6 @@ import { ReactComponent as Menu } from './../assets/svg/menu.svg';
 
 export function Header() {
 
-    
     let navListner: any = null
     const [isScrollingDown, setIsScrollingDown] = useState(false)
     const [isMobile, setIsMobile] = useState(false)

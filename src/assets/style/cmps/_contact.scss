@@ -1,5 +1,8 @@
 .contact-container {
     .links-container {
+        a {
+            cursor: pointer;
+        }
         display: flex;
         justify-content: center;
         gap: 20px;
@@ -9,11 +12,11 @@
             height: 50px;
             color: white;
         }
-        .phone{
+        .phone {
             fill: white;
         }
     }
-    p{
+    p {
         color: white;
         font-weight: 1.5rem;
     }

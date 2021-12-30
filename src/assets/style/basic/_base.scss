@@ -8,7 +8,6 @@ html {
   font-family: sans-serif;
   line-height: 1.6;
   scroll-behavior: smooth;
-
 }
 
 body {
@@ -32,22 +31,22 @@ h1 {
 img {
   width: 100%;
 }
-
 pre {
   background-color: lightgray;
   outline: 1px solid darkgray;
   padding: 3px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 button {
   cursor: pointer;
 }
 
-.pointer{
+.pointer {
   cursor: pointer;
 }
 
-a{
+a {
   text-decoration: none;
+  cursor: pointer;
   color: black;
 }

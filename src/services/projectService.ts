@@ -75,7 +75,7 @@ export const projects: Project[] = [
         techs: ['React Hooks', 'redux', 'Scss', 'Chart.js', 'Axios'],
         links: {
             github: 'https://github.com/itairom/Itai-Rom-20-11-21',
-            url: 'https://github.com/itairom/Itai-Rom-20-11-21'
+            url: 'https://weather-app-itai.herokuapp.com/#/'
             
         },
         date: '7.7.21'

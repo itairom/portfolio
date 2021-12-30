@@ -6,10 +6,7 @@ import { Projects } from "./Projects"
 import { Skills } from "./Skills"
 import { Top } from "./Top"
 
-
 export const Home: React.FC = () => {
-
-
 
     return (
         <div className="main-container home-container">
@@ -20,7 +17,6 @@ export const Home: React.FC = () => {
                 <Skills />
                 <Contact />
                 <ScrollToTop style={{zIndex:20}} smooth color="$primaryClr" />
-
             </Suspense >
         </div>
     )

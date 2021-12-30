@@ -1,12 +1,12 @@
 import SkillCard from "./SkillCard"
 
-export interface Skills {
+export interface SkillsInterface {
     high: string[],
     medium: string[],
 }
 export function Skills() {
 
-    const skills2: Skills = {
+    const skills2: SkillsInterface = {
         high: [
             'javascript',
             'react',
@@ -36,7 +36,7 @@ export function Skills() {
             <div className="skills-cards">
                 {skills2.high.map((skill) => {
                     return (
-                        <SkillCard skill={skill} />
+                        <SkillCard key={skill} skill={skill} />
                     )
                 })}
             </div>
@@ -44,7 +44,7 @@ export function Skills() {
             <div className="skills-cards">
                 {skills2.medium.map((skill) => {
                     return (
-                        <SkillCard skill={skill} />
+                        <SkillCard key={skill} skill={skill} />
                     )
                 })}
             </div>

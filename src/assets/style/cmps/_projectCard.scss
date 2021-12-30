@@ -48,8 +48,8 @@
         padding: 16px;
         box-shadow: 0 20px 30px -15px #000000;
         margin-bottom: 20px;
-        ::after{
-            content: '.';
+        ::after {
+            content: ".";
             color: $primaryClr;
         }
     }

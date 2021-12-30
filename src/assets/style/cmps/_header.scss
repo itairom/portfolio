@@ -22,14 +22,14 @@
     @include for-narrow-layout {
         display: flex;
     }
-
+    
     align-items: center;
     a {
         font-family: Roboto;
-
         color: $primaryClr;
         font-size: 1.2rem;
         margin-right: 10px;
+        cursor: pointer;
 
         &:last-child {
             margin-right: 0px;
@@ -80,7 +80,6 @@
     }
 }
 .menu-btn {
-    
     display: block;
     width: 50px;
     height: 50px;
@@ -93,7 +92,6 @@
 }
 
 .mobile-nav {
-    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -103,7 +101,7 @@
     width: 100vw;
     padding: 0 16px;
     animation: nav-animatin ease-in 0.5s forwards;
-    
+
     @include for-narrow-layout {
         display: none;
     }

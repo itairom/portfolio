@@ -1,9 +1,7 @@
 import { projects, Project } from "../services/projectService";
 import { ProjectCard } from "./ProjectCard";
 
-
 export const Projects: React.FC = () => {
-
 
     return (
         <section id="projects" className="projects-container">

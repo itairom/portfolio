@@ -11,7 +11,7 @@
         grid-template-columns: 110px 110px 110px;
         margin: 20px 0;
         @include for-narrow-layout {
-            grid-template-columns: 120px 120px 120px ;
+            grid-template-columns: 120px 120px 120px;
         }
         @include for-normal-layout {
             display: flex;
@@ -27,7 +27,6 @@
             align-items: center;
             p {
                 color: white;
-                // margin-bottom: 20px;
                 line-height: 0;
                 text-transform: capitalize;
                 font-size: 1.1rem;
@@ -46,5 +45,3 @@
         }
     }
 }
-
-// font-size: calc(10px + 15 * ((100vw - 420px) / 1180));

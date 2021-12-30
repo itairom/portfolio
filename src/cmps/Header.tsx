@@ -1,10 +1,10 @@
-import { useState } from "react";
-import { useEffect } from "react"
+import { useEffect,useState } from "react"
 import { ReactComponent as Logo } from './../assets/svg/itai-logo.svg';
 import { ReactComponent as Menu } from './../assets/svg/menu.svg';
 
 export function Header() {
 
+    
     let navListner: any = null
     const [isScrollingDown, setIsScrollingDown] = useState(false)
     const [isMobile, setIsMobile] = useState(false)
@@ -13,18 +13,6 @@ export function Header() {
         setIsMobile(prev => prev = !prev)
     }
     useEffect(() => {
-        // navListner = window.addEventListener('scroll', () => {
-        // if (window.scrollY > 150 && window.scrollY !== 0) {
-        //     console.log(window.scrollY);
-        //     setIsScrolling(true)
-
-        // }
-        // else {
-        // setIsScrolling(false)
-        // }
-
-        // })
-
         let oldValue = 0
         let newValue = 0
         window.addEventListener('scroll', (e) => {

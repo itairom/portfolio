@@ -1,0 +1,11 @@
+.scroll-container{
+    position: fixed;
+    width: 100vw;
+    height:5px;
+    // background-color: rgb(255, 255, 255);
+    z-index: 10;
+    .fill-bar{
+        background-color: #51c7b3;
+        height:100%;
+    }
+}

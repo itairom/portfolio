@@ -109,10 +109,10 @@
     }
   }
 }
-.rotation {
-  animation: rotation-animation ease-in 1s forwards;
+.skill-animation {
+  animation: skill-animation-animation ease-in 1s forwards;
 
-  @keyframes rotation-animation {
+  @keyframes skill-animation-animation {
     from {
       transform: translateY(50px);
     }

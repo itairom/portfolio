@@ -1,6 +1,7 @@
 import { useEffect,useState } from "react"
 import { ReactComponent as Logo } from './../assets/svg/itai-logo.svg';
 import { ReactComponent as Menu } from './../assets/svg/menu.svg';
+import ScrollBarIndicator from "./ScrollBarIndicator/ScrollBarIndicator";
 
 export function Header() {
 
@@ -31,6 +32,8 @@ export function Header() {
     }, [])
 
     return (
+        <>
+    {/* <ScrollBarIndicator /> */}
         <nav className={!isScrollingDown ? 'main-nav' : 'main-nav shadow'}>
             <div className="left-nav">
                 <Logo />
@@ -51,5 +54,6 @@ export function Header() {
                 <a className="resume" href="./Itai Rom CV.docx" download>Resume</a>
             </div>
         </nav>
+        </>
     )
 }

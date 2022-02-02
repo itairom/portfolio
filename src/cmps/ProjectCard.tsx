@@ -36,9 +36,9 @@ export const ProjectCard: React.FC<Props> = ({ project }) => {
                     <a target="_blank" rel="noreferrer" href={project.links.github}>
                         < Github />
                     </a>
-                    <a target="_blank" rel="noreferrer" href={project.links.url}>
+                    {project.links.url && <a target="_blank" rel="noreferrer" href={project.links.url}>
                         < Url />
-                    </a>
+                    </a>}
                 </div>
                 <video src={`./videos/${project.title}_demo.mp4`} loop autoPlay playsInline muted  ></video>
             </div>

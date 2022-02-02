@@ -1,7 +1,6 @@
 import { useEffect,useState } from "react"
 import { ReactComponent as Logo } from './../assets/svg/itai-logo.svg';
 import { ReactComponent as Menu } from './../assets/svg/menu.svg';
-import ScrollBarIndicator from "./ScrollBarIndicator/ScrollBarIndicator";
 
 export function Header() {
 
@@ -29,11 +28,10 @@ export function Header() {
         return () => {
             window.removeEventListener('scroll', navListner)
         }
-    }, [])
+    }, [navListner])
 
     return (
         <>
-    {/* <ScrollBarIndicator /> */}
         <nav className={!isScrollingDown ? 'main-nav' : 'main-nav shadow'}>
             <div className="left-nav">
                 <Logo />

@@ -5,7 +5,7 @@ export interface Project {
     techs: string[],
     links: {
         github: string,
-        url: string
+        url?: string
     },
     date?: string
 }
@@ -28,7 +28,7 @@ export const projects: Project[] = [
         techs: ['React Hooks', 'Redux Toolkit', 'Javascript', 'Audio API'],
         links: {
             github: 'https://github.com/itairom/Sprinttify',
-            url: 'https://sprinttify.netlify.app/#/home'
+            // url: 'https://sprinttify.netlify.app/#/home'
 
         },
         date: '7.7.21'
@@ -52,7 +52,7 @@ export const projects: Project[] = [
         techs: ['Angular', 'Typescript', 'chart.js'],
         links: {
             github: 'https://github.com/itairom/crypto',
-            url: 'https://sprinttcrypto.netlify.app/#/home'
+            // url: 'https://sprinttcrypto.netlify.app/#/home'
 
         },
         date: '7.7.21'
